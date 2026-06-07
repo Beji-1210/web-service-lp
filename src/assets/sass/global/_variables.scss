@@ -1,0 +1,30 @@
+// 色
+$color-main: #64629d;
+$color-sub: #9f9ec1;
+$color-gray: #f9f9f9;
+$color-pale: #edecfc;
+$color-dark: #2d2d32;
+$color-white: #fff;
+$color-black: #000;
+
+// フォント
+$ff-base__ja: "Noto Sans JP", sans-serif;
+$ff-base__en: "Jost", sans-serif;
+$fz-base: 16px;
+$lh-base: 1.6;
+$fw-base: 400;
+
+// レイアウト
+$inner-width: 1020px;
+
+// ヘッダー
+$header-height__sp: 52px;
+$header-height__pc: 72px;
+
+// ブレークポイント（SPファースト）
+$breakpoints: (
+  sm: "screen and (min-width: 600px)",
+  md: "screen and (min-width: 768px)",
+  lg: "screen and (min-width: 900px)",
+  xl: "screen and (min-width: 1160px)",
+);

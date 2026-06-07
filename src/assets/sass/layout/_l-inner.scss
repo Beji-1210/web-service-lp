@@ -1,0 +1,11 @@
+@use "sass:map";
+@use "../global" as global;
+
+.l-inner {
+  padding-inline: 20px;
+  @include global.mq(md) {
+    width: min(calc(global.$inner-width + 40px * 2), 100%);
+    padding-inline: 40px;
+    margin-inline: auto;
+  }
+}

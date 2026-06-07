@@ -1,0 +1,14 @@
+@use "sass:map";
+@use "../global" as global;
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: global.$header-height__sp;
+  z-index: 50;
+  @include global.mq(md) {
+    height: global.$header-height__pc;
+  }
+}

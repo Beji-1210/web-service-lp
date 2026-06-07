@@ -1,0 +1,38 @@
+@use "sass:map";
+@use "../global" as global;
+
+.c-section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+
+  @include global.mq(md) {
+    gap: 18px;
+  }
+}
+
+.c-section-title__en {
+  font-family: global.$ff-base__en;
+  font-size: 22px;
+  line-height: 1;
+  color: global.$color-sub;
+  
+  @include global.mq(md) {
+    font-size: 36px;
+  }
+}
+
+.c-section-title__ja {
+  font-size: 30px;
+  line-height: 1.4;
+  color: global.$color-main;
+  letter-spacing: 1.5px;
+
+  @include global.mq(md) {
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: 2.4px;
+  }
+}
