@@ -4,6 +4,10 @@
 .p-flow {
   background-color: global.$color-gray;
 
+  @include global.mq(md) {
+    padding-block-end: 80px;
+  }
+
   .c-section-title {
     margin-bottom: 40px;
 
