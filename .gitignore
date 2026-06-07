@@ -1,3 +1,6 @@
+# Gulp output
+public/
+
 # Logs
 logs
 *.log

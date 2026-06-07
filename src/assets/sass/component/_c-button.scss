@@ -1,0 +1,63 @@
+@use "sass:map";
+@use "../global" as global;
+
+.c-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: global.$ff-base__ja;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 16px 40px 20px;
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 29px;
+  border: 2px solid global.$color-main;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.24);
+
+  // ホバー時に背景色が変わる
+  position: relative;
+  overflow: hidden;
+  color: global.$color-white;
+  background-color: global.$color-main;
+  background-image: linear-gradient(
+    45deg,
+    global.$color-white 0%,
+    global.$color-white 50%,
+    global.$color-main 50%,
+    global.$color-main 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 200% 200%;
+  background-position: 100% 0;
+  transition-property: background-position, color, border-color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+
+  &:hover {
+    background-position: 0 100%;
+    color: global.$color-main;
+  }
+
+  @include global.mq(md) {
+    padding: 21px 54px;
+    font-size: 24px;
+    border-radius: 50px;
+  }
+}
+
+.c-button--white {
+  color: global.$color-main;
+  background-color: global.$color-white;
+  background-image: linear-gradient(
+    45deg,
+    global.$color-main 0%,
+    global.$color-main 50%,
+    global.$color-white 50%,
+    global.$color-white 100%
+  );
+  &:hover {
+    color: global.$color-white;
+  }
+}

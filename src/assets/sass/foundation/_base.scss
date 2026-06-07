@@ -1,0 +1,17 @@
+@use "sass:map";
+@use "../global" as global;
+
+body {
+  font-size: global.$fz-base;
+  font-weight: global.$fw-base;
+  color: global.$color-dark;
+  background-color: global.$color-white;
+  font-family: global.$ff-base__ja;
+  line-height: global.$lh-base;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,10 @@
+@use "sass:map";
+@use "../global" as global;
+
+.l-section {
+  padding-block: 60px;
+
+  @include global.mq(md) {
+    padding-block: 100px;
+  }
+}
