@@ -2,11 +2,11 @@
 
 Webサービス風LPのチーム開発練習リポジトリです。
 
-## 教材
+## デザインカンプ
 
-[スクール教材](https://edu.daily-trial.com/lessons/web_site/courses/23a23d20/articles/53973524#tips_0)
+以下のリンクよりデザインカンプを取得してください。
 
-コーディング時は必ずデザインカンプを参照してください。
+[デザインカンプを取得する](https://edu.daily-trial.com/lessons/web_site/courses/23a23d20/articles/53973524#tips_0)
 
 ---
 
