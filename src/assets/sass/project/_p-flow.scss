@@ -1,0 +1,119 @@
+@use 'sass:map';
+@use '../global' as global;
+
+.p-flow {
+  background-color: global.$color-gray;
+
+  @include global.mq(md) {
+    padding-block-end: 80px;
+  }
+
+  .c-section-title {
+    margin-bottom: 40px;
+
+    @include global.mq(lg) {
+      margin-bottom: 54px;
+    }
+  }
+}
+
+.p-flow__list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 60px;
+  margin-inline: auto;
+  list-style: none;
+
+  @include global.mq(lg) {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    max-width: 1085px;
+  }
+}
+
+.p-flow__item {
+  width: 100%;
+  max-width: 500px;
+  margin-inline: auto;
+
+  @include global.mq(lg) {
+    max-width: 280px;
+  }
+}
+
+.p-flow__number {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -24px;
+  font-family: global.$ff-base__en;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  color: global.$color-main;
+
+  @include global.mq(lg) {
+    margin-bottom: -33px;
+  }
+}
+
+.p-flow__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 191px;
+  margin-bottom: 16px;
+  background-color: global.$color-pale;
+  border-radius: 30px;
+
+  img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 148px;
+    object-fit: contain;
+  }
+}
+
+.p-flow__heading {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: global.$color-dark;
+  text-align: center;
+
+  @media (min-width: 900px) and (max-width: 1010px) {
+    font-size: 22px;
+  }
+
+  @include global.mq(lg) {
+    font-size: 24px;
+  }
+}
+
+.p-flow__text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: global.$color-dark;
+}
+
+.p-flow__arrow {
+  display: none;
+  flex-shrink: 0;
+  width: 0;
+  height: 0;
+  margin-block: 80px 0;
+  list-style: none;
+  border-top: 32px solid transparent;
+  border-bottom: 32px solid transparent;
+  border-left: 29px solid global.$color-main;
+
+  @include global.mq(lg) {
+    display: block;
+    margin-inline: 38px;
+  }
+}
