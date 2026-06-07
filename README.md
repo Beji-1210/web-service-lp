@@ -2,6 +2,14 @@
 
 Webサービス風LPのチーム開発練習リポジトリです。
 
+## デザインカンプ
+
+[Figma（要閲覧権限）](https://www.figma.com/design/hzbBEHd7bgD0szDlDpLyKK/Web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%A2%A8LP%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%B3%E3%83%97--%E7%B7%B4%E7%BF%92-?m=auto&t=3s0QLy5nDXRmT1jN-6)
+
+コーディング時は必ずこちらのデザインカンプを参照してください。
+
+---
+
 ## 技術構成
 
 - HTML / CSS / JavaScript
