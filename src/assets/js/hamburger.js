@@ -44,6 +44,6 @@ drawerNavItem.forEach((item) => {
     event.preventDefault();
     closeMenu();
     const target = document.querySelector(item.getAttribute("href"));
-    if (target) target.scrollIntoView({ behavior: "smooth" });
+    if (target) linkScroll(target);
   });
 });

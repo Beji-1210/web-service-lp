@@ -8,6 +8,7 @@
   width: 100%;
   height: global.$header-height__sp;
   z-index: 50;
+  background: global.$color-white;
   @include global.mq(md) {
     height: global.$header-height__pc;
   }
@@ -20,7 +21,7 @@
   height: inherit;
 
   @include global.mq(md) {
-    padding-inline: 120px;
+    padding-inline: 120px 132px;
   }
 
   @media (min-width: 1000px) {

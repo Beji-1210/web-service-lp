@@ -40,7 +40,7 @@
   width: 21px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
   background-color: transparent;
 
   @include global.mq(md) {
@@ -60,14 +60,16 @@
     .p-drawer__icon--bar {
       &:nth-of-type(1) {
         rotate: 45deg;
-        translate: 0 7px;
+        translate: 0 2px;
+        width: 23px;
       }
       &:nth-of-type(2) {
         opacity: 0;
       }
       &:nth-of-type(3) {
         rotate: -45deg;
-        translate: 0 -7px;
+        translate: 0 -16px;
+        width: 23px;
       }
     }
   }
@@ -84,7 +86,7 @@
 }
 
 .p-drawer__icon--bar {
-  width: 100%;
+  width: 21px;
   height: 3px;
   background-color: #64629d;
   border-radius: 5px;
@@ -111,6 +113,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 40px;
+  margin-inline-start: -28px;
 
   li {
     a {
@@ -167,4 +170,12 @@
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+}
+
+.p-drawer__button {
+  padding-inline: 39px;
+}
+
+.p-drawer__button--white {
+  padding-inline: 48px;
 }
