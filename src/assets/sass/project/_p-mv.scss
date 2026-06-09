@@ -25,7 +25,7 @@
       "btn   image";
     column-gap: calc(16 / 1440 * 100vw);
     padding-block-start: calc(117 / 1440 * 100vw);
-    padding-block-end: calc(113 / 1440 * 100vw);
+    padding-block-end: calc(32 / 1440 * 100vw);
     padding-inline-start: calc(120 / 1440 * 100vw);
     padding-inline-end: calc(133 / 1440 * 100vw);
     grid-template-rows: auto auto 1fr;
@@ -41,11 +41,14 @@
   color: global.$color-dark;
   width: fit-content;
   margin-inline: auto;
+  padding-inline-end: 5px;
 
   @include global.mq(md) {
     grid-area: title;
     font-size: calc(60 / 1440 * 100vw);
     line-height: normal;
+    padding-inline-end: 0;
+    
   }
 }
 
@@ -72,12 +75,14 @@
 .p-mv__image {
   width: 305px;
   margin-block-start: -25px;
-  margin-inline-start: 10px;
+  margin-inline: auto;
+
 
   img {
     width: 100%;
     height: auto;
-    aspect-ratio: 1;
+    aspect-ratio: 315 / 315;
+    object-fit: cover;
   }
 
   @include global.mq(md) {
@@ -114,5 +119,3 @@
   }
 }
 
-.p-mv__button--white {
-}
