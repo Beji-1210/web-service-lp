@@ -1,0 +1,10 @@
+@use "sass:map";
+@use "../global" as global;
+
+.u-hidden-sp {
+  display: none;
+
+  @include global.mq(lg) {
+    display: block;
+  }
+}

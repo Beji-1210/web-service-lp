@@ -2,4 +2,178 @@
 @use "../global" as global;
 
 .p-feature {
+  background-color: global.$color-gray;
+}
+.p-feature__inner {
+  &.l-inner {
+    padding-inline: 0;
+
+    @include global.mq(lg) {
+      width: min(calc(1200px + 40px * 2), 100%);
+      padding-inline: 40px;
+    }
+  }
+}
+
+.p-feature__title-num {
+  font-size: 38px;
+  vertical-align: baseline;
+
+  @include global.mq(md) {
+    font-size: 60px;
+  }
+}
+
+.p-feature__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  list-style: none;
+  margin-block-start: 40px;
+
+  @include global.mq(lg) {
+    gap: 0;
+    margin-block-start: 100px;
+  }
+}
+
+.p-feature__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin-inline: auto;
+
+  @include global.mq(lg) {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    max-width: 100%;
+  }
+
+  &:nth-child(2) {
+    @include global.mq(lg) {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-block-start: 80px;
+    }
+    @include global.mq(xl) {
+      margin-block-start: 153px;
+    }
+  }
+
+  &:nth-child(3) {
+    @include global.mq(lg) {
+      margin-block-start: 80px;
+    }
+    @include global.mq(xl) {
+      margin-block-start: 0;
+    }
+  }
+}
+
+.p-feature__img {
+  position: relative;
+  z-index: 1;
+  width: 280px;
+  height: auto;
+  aspect-ratio: 1;
+  margin-block-end: -75px;
+
+  @include global.mq(lg) {
+    flex: 0 0 43%;
+    margin-block-end: 0;
+    margin-inline-start: -5%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.p-feature__card {
+  width: 100%;
+  padding: 49px 20px 40px;
+  background-color: global.$color-white;
+  border-radius: 16px;
+
+  @include global.mq(lg) {
+    padding: 50px 30px;
+  }
+
+  @include global.mq(xl) {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    flex: 0 0 62%;
+    padding: 65px 40px;
+    border-radius: 30px;
+    min-height: 366px;
+  }
+
+}
+
+.p-feature__item:nth-child(2) .p-feature__img {
+  @include global.mq(lg) {
+    margin-inline-start: 0;
+    margin-inline-end: -5%;
+  }
+}
+
+.p-feature__item:nth-child(2) .p-feature__card {
+  @include global.mq(xl) {
+    padding-inline-end: 15px;
+  }
+}
+
+.p-feature__item:nth-child(2) .p-feature__heading {
+  margin-inline-end: -20px;
+}
+
+.p-feature__number {
+  font-family: global.$ff-base__en;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+  color: global.$color-main;
+
+  @include global.mq(lg) {
+    flex-shrink: 0;
+    font-size: 56px;
+    margin-block-end: 0;
+  }
+  @include global.mq(xl) {
+    font-size: 72px;
+  }
+}
+
+.p-feature__heading {
+  margin-block-end: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: global.$color-dark;
+
+  @include global.mq(lg) {
+    margin-block-end: 17px;
+    font-size: 28px;
+  }
+
+  @include global.mq(xl) {
+    font-size: 36px;
+  }
+}
+
+.p-feature__text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: global.$color-dark;
+
+  @include global.mq(lg) {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 470px;
+  }
 }

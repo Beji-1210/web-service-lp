@@ -1,0 +1,33 @@
+@use "sass:map";
+@use "../global" as global;
+
+.p-users {
+  .c-section-title {
+    margin-bottom: 24px;
+
+    @include global.mq(md) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.p-users__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px 11px;
+  margin-inline: auto;
+  list-style: none;
+
+  @include global.mq(md) {
+    gap: 50px 40px;
+    max-width: 972px;
+  }
+}
+
+.p-users__item {
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
