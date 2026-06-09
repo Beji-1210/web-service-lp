@@ -20,10 +20,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
 
     <title>Ravek | Webサービス</title>
 
@@ -32,7 +29,44 @@
   </head>
   <body>
     <!-- ヘッダー -->
-    <header id="header" class="l-header"></header>
+    <header id="header" class="l-header p-header">
+      <div class="l-header__inner">
+        <a href="#" class="p-header__logo"><img src="./assets/img/header-logo.svg" alt="Ravek" decoding="async" width="69" height="19" /></a>
+        <nav class="p-header__nav">
+          <ul class="p-header__list">
+            <li><a href="#feature">特長</a></li>
+            <li><a href="#users">導入実績</a></li>
+            <li><a href="#flow">導入までの流れ</a></li>
+            <li><a href="#price">料金プラン</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+          </ul>
+          <a href="contact" class="p-header__button c-button">無料で使ってみる</a>
+        </nav>
+      </div>
+    </header>
+
+    <button class="p-drawer__icon">
+      <span class="p-drawer__icon--menu">MENU</span>
+      <div class="p-drawer__icon--bar"></div>
+      <div class="p-drawer__icon--bar"></div>
+      <div class="p-drawer__icon--bar"></div>
+    </button>
+
+    <div class="p-drawer">
+      <div class="p-drawer__body">
+        <ul class="p-drawer__list">
+          <li><a href="#feature"><span>特長</span></a></li>
+          <li><a href="#users"><span>導入実績</span></a></li>
+          <li><a href="#flow"><span>導入までの流れ</span></a></li>
+          <li><a href="#price"><span>料金プラン</span></a></li>
+          <li><a href="#faq"><span>よくある質問</span></a></li>
+        </ul>
+        <div class="p-drawer__button-wrap">
+          <a href="#" class="c-button p-drawer__button">無料でRavekを使ってみる</a>
+          <a href="#" class="c-button c-button--white p-drawer__button--white">資料をダウンロードする</a>
+        </div>
+      </div>
+    </div>
 
     <main>
       <!-- MV -->
@@ -145,84 +179,28 @@
           </hgroup>
           <ul class="p-users__list">
             <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
             </li>
             <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
             </li>
             <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
             </li>
             <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
             </li>
             <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
             </li>
             <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
             </li>
             <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
             </li>
             <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
             </li>
           </ul>
         </div>
@@ -239,55 +217,28 @@
             <li class="p-flow__item">
               <p class="p-flow__number">01</p>
               <div class="p-flow__img">
-                <img
-                  src="./assets/img/flow-image1.webp"
-                  alt="無料トライアルを開始"
-                  width="199"
-                  height="148"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <img src="./assets/img/flow-image1.webp" alt="無料トライアルを開始" width="199" height="148" loading="lazy" decoding="async" />
               </div>
               <h3 class="p-flow__heading">無料トライアルを開始</h3>
-              <p class="p-flow__text">
-                まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。
-              </p>
+              <p class="p-flow__text">まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。</p>
             </li>
             <li class="p-flow__arrow" aria-hidden="true"></li>
             <li class="p-flow__item">
               <p class="p-flow__number">02</p>
               <div class="p-flow__img">
-                <img
-                  src="./assets/img/flow-image2.webp"
-                  alt="本格導入をサポート"
-                  width="199"
-                  height="148"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <img src="./assets/img/flow-image2.webp" alt="本格導入をサポート" width="199" height="148" loading="lazy" decoding="async" />
               </div>
               <h3 class="p-flow__heading">本格導入をサポート</h3>
-              <p class="p-flow__text">
-                Ravekを気に入っていただけましたら、適したプランで導入ください。導入にお困りの際は、メール、またはチャットにてサポートいたします。
-              </p>
+              <p class="p-flow__text">Ravekを気に入っていただけましたら、適したプランで導入ください。導入にお困りの際は、メール、またはチャットにてサポートいたします。</p>
             </li>
             <li class="p-flow__arrow" aria-hidden="true"></li>
             <li class="p-flow__item">
               <p class="p-flow__number">03</p>
               <div class="p-flow__img">
-                <img
-                  src="./assets/img/flow-image3.webp"
-                  alt="全プロジェクトへ展開"
-                  width="192"
-                  height="143"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <img src="./assets/img/flow-image3.webp" alt="全プロジェクトへ展開" width="192" height="143" loading="lazy" decoding="async" />
               </div>
               <h3 class="p-flow__heading">全プロジェクトへ展開</h3>
-              <p class="p-flow__text">
-                Ravekは段階的な導入がおすすめです。主要プロジェクトでの運用に慣れたら、全プロジェクトへ展開を行いましょう。
-              </p>
+              <p class="p-flow__text">Ravekは段階的な導入がおすすめです。主要プロジェクトでの運用に慣れたら、全プロジェクトへ展開を行いましょう。</p>
             </li>
           </ol>
         </div>
