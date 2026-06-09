@@ -20,10 +20,14 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<<<<<<< HEAD
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+=======
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+>>>>>>> 7ff48219a8e4720d229cec9b3908602778bccb9c
 
     <title>Ravek | Webサービス</title>
 
@@ -96,12 +100,25 @@
 
     <main>
       <!-- MV -->
-      <section id="mv" class="p-mv l-section"></section>
+      <section id="mv" class="p-mv">
+        <div class="p-mv__inner">
+          <h1 class="p-mv__title">タスク管理は<br />時間をかけず、高速に。</h1>
+          <p class="p-mv__text">Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を<br>簡単かつ高速にし、生産性を向上させるツールです。</p>
+          <div class="p-mv__image">
+            <img src="./assets/img/mv-image.png" alt="" width="1030" height="1030" decoding="async" />
+          </div>
+          <div class="p-mv__button-wrap">
+            <a href="#contact" class="c-button p-mv__button">まずは無料で使ってみる</a>
+            <a href="#" class="c-button c-button--white p-mv__button p-mv__button--white">資料をダウンロードする</a>
+          </div>
+        </div>
+      </section>
 
       <!-- What is Ravek? -->
       <section id="about" class="p-about l-section"></section>
 
       <!-- Feature -->
+<<<<<<< HEAD
       <section id="feature" class="p-feature l-section"></section>
 
       <!-- Results -->
@@ -109,6 +126,185 @@
 
       <!-- How to -->
       <section id="howto" class="p-howto l-section"></section>
+=======
+      <section id="feature" class="p-feature l-section">
+        <div class="p-feature__inner l-inner">
+          <hgroup class="c-section-title">
+            <p class="c-section-title__en">Feature</p>
+            <h2 class="c-section-title__ja">
+              Ravekの<span class="p-feature__title-num">3</span>つの特長
+            </h2>
+          </hgroup>
+          <ol class="p-feature__list">
+            <li class="p-feature__item">
+              <div class="p-feature__img">
+                <img
+                  src="./assets/img/feature-image1.webp"
+                  alt="ダッシュボードの画面イメージ"
+                  width="520"
+                  height="520"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="p-feature__card">
+                <p class="p-feature__number">01</p>
+                <div class="p-feature__content">
+                  <h3 class="p-feature__heading">
+                    タスクの種類・進捗を<br />ダッシュボードで確認可能
+                  </h3>
+                  <p class="p-feature__text">
+                    Ravekはメンバーが入力したタスクを整理し、ダッシュボードにガントチャートとして表示。ダッシュボードを確認するだけで、誰のどのタスクがどの程度進んでいるのかを一目で把握できます。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="p-feature__item">
+              <div class="p-feature__img">
+                <img
+                  src="./assets/img/feature-image2.webp"
+                  alt="シンプルな入力操作のイメージ"
+                  width="520"
+                  height="520"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="p-feature__card">
+                <p class="p-feature__number">02</p>
+                <div class="p-feature__content">
+                  <h3 class="p-feature__heading">
+                    タスクの入力がシンプルかつ簡単。<br />入力の手間が最小限に
+                  </h3>
+                  <p class="p-feature__text">
+                    タスク管理ツールで面倒になりがちなタスクの入力作業。<br
+                      class="u-hidden-sp"
+                    />RavekはPC・スマートフォンのどちらでもシンプルかつ簡単に入力でき、手間が最小限に抑えられます。本質的な業務に時間を割きましょう。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="p-feature__item">
+              <div class="p-feature__img">
+                <img
+                  src="./assets/img/feature-image3.webp"
+                  alt="Slack連携のイメージ"
+                  width="520"
+                  height="520"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="p-feature__card">
+                <p class="p-feature__number">03</p>
+                <div class="p-feature__content">
+                  <h3 class="p-feature__heading">
+                    SlackとのAPI連携<br />ツール切り替えの手間を削減
+                  </h3>
+                  <p class="p-feature__text">
+                    RavekはSlackと連携することで、Slack上でRavekをタスクを追加したり、確認したりできます。都度の切り替えの手間がなくなり、シームレスに扱えるのが特長です。Slackを導入しているなら違和感なく使用できます。
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <div class="p-cta">
+        <div class="l-inner">
+          <p class="p-cta__text">
+            14日間の無料トライアル可能。<br />Ravekで快適なタスク管理を体験しよう
+          </p>
+          <a class="p-cta__button c-button" href="#">無料でRavekを使ってみる</a>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <section id="users" class="p-users l-section">
+        <div class="l-inner">
+          <hgroup class="c-section-title">
+            <p class="c-section-title__en">Users</p>
+            <h2 class="c-section-title__ja">導入実績</h2>
+          </hgroup>
+          <ul class="p-users__list">
+            <li class="p-users__item">
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+            </li>
+            <li class="p-users__item">
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+            </li>
+            <li class="p-users__item">
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+            </li>
+            <li class="p-users__item">
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+            </li>
+            <li class="p-users__item">
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+            </li>
+            <li class="p-users__item">
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+            </li>
+            <li class="p-users__item">
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+            </li>
+            <li class="p-users__item">
+              <img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Flow -->
+      <section id="flow" class="p-flow l-section">
+        <div class="l-inner">
+          <hgroup class="c-section-title">
+            <p class="c-section-title__en">Flow</p>
+            <h2 class="c-section-title__ja">導入までの流れ</h2>
+          </hgroup>
+          <ol class="p-flow__list">
+            <li class="p-flow__item">
+              <p class="p-flow__number">01</p>
+              <div class="p-flow__img">
+                <img src="./assets/img/flow-image1.webp" alt="無料トライアルを開始" width="199" height="148" loading="lazy" decoding="async" />
+              </div>
+              <h3 class="p-flow__heading">無料トライアルを開始</h3>
+              <p class="p-flow__text">まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。</p>
+            </li>
+            <li class="p-flow__arrow" aria-hidden="true"></li>
+            <li class="p-flow__item">
+              <p class="p-flow__number">02</p>
+              <div class="p-flow__img">
+                <img src="./assets/img/flow-image2.webp" alt="本格導入をサポート" width="199" height="148" loading="lazy" decoding="async" />
+              </div>
+              <h3 class="p-flow__heading">本格導入をサポート</h3>
+              <p class="p-flow__text">Ravekを気に入っていただけましたら、適したプランで導入ください。導入にお困りの際は、メール、またはチャットにてサポートいたします。</p>
+            </li>
+            <li class="p-flow__arrow" aria-hidden="true"></li>
+            <li class="p-flow__item">
+              <p class="p-flow__number">03</p>
+              <div class="p-flow__img">
+                <img src="./assets/img/flow-image3.webp" alt="全プロジェクトへ展開" width="192" height="143" loading="lazy" decoding="async" />
+              </div>
+              <h3 class="p-flow__heading">全プロジェクトへ展開</h3>
+              <p class="p-flow__text">Ravekは段階的な導入がおすすめです。主要プロジェクトでの運用に慣れたら、全プロジェクトへ展開を行いましょう。</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <div class="p-cta">
+        <div class="l-inner">
+          <p class="p-cta__text">
+            14日間の無料トライアル可能。<br />Ravekで快適なタスク管理を体験しよう
+          </p>
+          <a class="p-cta__button c-button" href="#">無料でRavekを使ってみる</a>
+        </div>
+      </div>
+>>>>>>> 7ff48219a8e4720d229cec9b3908602778bccb9c
 
       <!-- Price -->
       <section id="price" class="p-price l-section">
@@ -236,6 +432,7 @@
 
       <!-- FAQ -->
       <section id="faq" class="p-faq l-section"></section>
+<<<<<<< HEAD
 
       <!-- CTA -->
       <div class="p-cta"></div>
@@ -504,16 +701,22 @@
 
       <!-- FAQ -->
       <section id="faq" class="p-faq l-section"></section>
+=======
+>>>>>>> 7ff48219a8e4720d229cec9b3908602778bccb9c
     </main>
 
     <!-- フッター -->
     <footer id="footer" class="l-footer"></footer>
 
     <!-- JavaScript -->
+<<<<<<< HEAD
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"
       defer
     ></script>
+=======
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
+>>>>>>> 7ff48219a8e4720d229cec9b3908602778bccb9c
     <script src="./assets/js/main.js" defer></script>
   </body>
 </html>
