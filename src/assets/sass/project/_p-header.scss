@@ -1,0 +1,77 @@
+@use "sass:map";
+@use "../global" as global;
+
+.p-header {
+}
+
+.p-header__logo {
+  width: 71px;
+
+  display: inline-block;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 1000px) {
+    width: 83px;
+  }
+}
+
+.p-header__nav {
+  display: none;
+
+  @media (min-width: 1000px) {
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+    justify-content: end;
+  }
+}
+
+.p-header__list {
+  @media (min-width: 1000px) {
+    display: flex;
+    column-gap: 9px;
+
+    li {
+      a {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        padding-inline: 3px;
+        line-height: 1;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -8px;
+          left: 50%;
+          width: 70%;
+          height: 1.355px;
+          background-color: #64629d;
+          transform: translateX(-50%) scaleX(0);
+          transform-origin: center;
+          transition: transform 0.3s ease;
+        }
+
+        @media (hover: hover) {
+          &:hover::after {
+            transform: translateX(-50%) scaleX(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.p-header__button {
+  @media (min-width: 1000px) {
+    margin: 0;
+    font-size: 16px;
+    padding: 11px 25px;
+
+  }
+}

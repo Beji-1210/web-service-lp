@@ -8,6 +8,11 @@ body {
   background-color: global.$color-white;
   font-family: global.$ff-base__ja;
   line-height: global.$lh-base;
+
+  &.is-fixed {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 img {
