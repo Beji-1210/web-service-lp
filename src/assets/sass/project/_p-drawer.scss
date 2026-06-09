@@ -178,4 +178,8 @@
 
 .p-drawer__button--white {
   padding-inline: 48px;
+
+  @include global.mq(md) {
+    padding-inline: 66px;
+  }
 }
