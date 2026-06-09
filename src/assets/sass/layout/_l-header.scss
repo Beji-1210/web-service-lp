@@ -12,3 +12,18 @@
     height: global.$header-height__pc;
   }
 }
+
+.l-header__inner {
+  padding-inline: 20px;
+  display: grid;
+  align-items: center;
+  height: inherit;
+
+  @include global.mq(md) {
+    padding-inline: 120px;
+  }
+
+  @media (min-width: 1000px) {
+    grid-template-columns: auto 1fr;
+  }
+}
