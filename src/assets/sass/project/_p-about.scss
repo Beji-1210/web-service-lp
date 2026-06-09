@@ -2,4 +2,31 @@
 @use "../global" as global;
 
 .p-about {
+  padding-block: 80px;
+}
+
+
+.p-about__text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: global.$color-dark;
+  text-align: center;
+  margin-block-start: 24px;
+
+  & + & {
+    margin-block-start: 16px;
+  }
+
+  @include global.mq(md) {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}
+
+.p-about__button {
+  margin-block-start: 48px;
+
+  @include global.mq(md) {
+    margin-block-start: 72px;
+  }
 }
