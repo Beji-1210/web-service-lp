@@ -2,4 +2,330 @@
 @use "../global" as global;
 
 .p-price {
+  background-color: global.$color-white;
+}
+
+.p-price {
+  .l-inner {
+    padding-right: 0;
+    padding-left: 20px;
+
+    @include global.mq(md) {
+      width: min(calc(global.$inner-width + 40px * 2), 100%);
+      padding-inline: 40px;
+      margin-inline: auto;
+    }
+
+    @media screen and (max-width: 1100px) {
+      padding-right: 0;
+    }
+  }
+}
+
+.p-price {
+  .c-section-title {
+    @media screen and (max-width: 1100px) {
+      transform: translateX(-10px);
+    }
+  }
+}
+
+.p-price {
+  .c-button {
+    white-space: nowrap;
+    border: 2px solid global.$color-white;
+    margin-inline: auto;
+    font-size: 16px;
+    padding: 10px 12px 17px;
+    line-height: 1;
+    letter-spacing: 0;
+    padding: 10px 17px 12px;
+
+    @include global.mq(md) {
+      font-size: 18px;
+      padding: 13px 43px 15px;
+    }
+  }
+
+  .c-button.c-button--white {
+    border-color: global.$color-dark;
+    color: global.$color-dark;
+    background-color: global.$color-white;
+    background-image: linear-gradient(
+      45deg,
+      global.$color-black 0%,
+      global.$color-black 50%,
+      global.$color-white 50%,
+      global.$color-white 100%
+    );
+    &:hover {
+      color: global.$color-white;
+      border: 2px solid global.$color-white;
+    }
+  }
+}
+
+.p-price__table-scroll {
+  margin-top: 32px;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  @include global.mq(md) {
+    margin-top: 66px;
+  }
+
+  @media screen and (min-width: 1100px) {
+    overflow-x: visible;
+  }
+}
+
+.p-price__table-wrapper {
+  padding-top: 32px;
+
+  @include global.mq(md) {
+    margin-top: 16px;
+    padding-top: 16px;
+  }
+}
+
+.p-price__table {
+  width: 100%;
+  min-width: 727px;
+  border-collapse: collapse;
+  line-height: 1;
+  table-layout: fixed;
+
+  @include global.mq(md) {
+    min-width: 1020px;
+  }
+}
+
+.p-price__th-empty {
+  width: 151px;
+
+  @include global.mq(md) {
+    width: 240px;
+  }
+}
+
+.p-price__th {
+  background-color: global.$color-dark;
+  color: global.$color-white;
+  text-align: center;
+  padding: 20px 7px 24px;
+  width: 180px;
+  height: 200px;
+
+  @include global.mq(md) {
+    padding: 41px 13px 41px;
+    width: 260px;
+    height: 270px;
+  }
+}
+
+.p-price__th--featured.p-price__th {
+  position: relative;
+  width: 216px;
+
+  @include global.mq(md) {
+    width: 260px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -31px;
+    left: 0;
+    right: 0;
+    height: 32px;
+    background-color: global.$color-main;
+
+    @include global.mq(md) {
+      top: -15px;
+      height: 16px;
+    }
+  }
+}
+
+.p-price__th--featured {
+  background-color: global.$color-main;
+
+  .p-price__plan-name {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0;
+
+    @include global.mq(md) {
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .p-price__plan-price-label {
+    letter-spacing: 0;
+    font-size: 14px;
+    line-height: 1.16;
+
+    @include global.mq(md) {
+      font-size: 26px;
+    }
+  }
+
+  .p-price__plan-price-num {
+    @include global.mq(md) {
+      font-size: 42px;
+    }
+  }
+
+  .p-price__plan-price-unit {
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 1.16;
+
+    @include global.mq(md) {
+      font-size: 24px;
+    }
+  }
+
+  .p-price__plan-price {
+    margin-bottom: 36px;
+    gap: 10px;
+  }
+}
+
+.p-price__plan-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  letter-spacing: 0;
+
+  @include global.mq(md) {
+    font-size: 24px;
+    margin-bottom: 27px;
+  }
+}
+
+.p-price__plan-price {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 27px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+
+  @include global.mq(md) {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+.p-price__plan-price-label {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 1.21;
+
+  @include global.mq(md) {
+    font-size: 20px;
+  }
+}
+
+.p-price__plan-price-num {
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 1.2;
+
+  @include global.mq(md) {
+    font-size: 36px;
+  }
+}
+
+.p-price__plan-price-unit {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 1.16;
+
+  @include global.mq(md) {
+    font-size: 18px;
+  }
+}
+
+.p-price__btn {
+  font-size: 12px;
+  padding: 10px 16px 12px;
+  border-radius: 20px;
+  box-shadow: none;
+
+  @include global.mq(md) {
+    font-size: 16px;
+    padding: 14px 24px 16px;
+    border-radius: 28px;
+  }
+}
+
+.p-price__feature-name {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  color: global.$color-dark;
+  padding: 14px 10px 13px 18px;
+  white-space: nowrap;
+  line-height: 1;
+
+  @include global.mq(md) {
+    font-size: 22px;
+    padding: 19px 20px 19px 30px;
+    position: static;
+    line-height: 1;
+  }
+}
+
+.p-price__td {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: global.$color-dark;
+  background-color: global.$color-white;
+  padding: 11px;
+
+  @include global.mq(md) {
+    font-size: 16px;
+    padding: 18px 10px;
+  }
+}
+
+.p-price__td--featured {
+  font-weight: 700;
+  font-size: 20px;
+  @include global.mq(md) {
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
+
+.p-price__body-row:nth-child(odd) {
+  .p-price__feature-name,
+  .p-price__td {
+    background-color: global.$color-pale;
+  }
+}
+
+.p-price__foot-row {
+  .p-price__td {
+    padding: 9px 0;
+
+    @include global.mq(md) {
+      padding-top: 16px;
+    }
+  }
+}
+
+.p-price__foot-row {
+  .c-button {
+    border: 2px solid global.$color-main;
+  }
 }

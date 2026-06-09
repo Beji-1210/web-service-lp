@@ -1,83 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex">
-  <meta name="description" content="" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="" />
 
-  <!-- OGP -->
-  <meta property="og:title" content="" />
-  <meta property="og:description" content="" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
+    <!-- OGP -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
 
-  <!-- ファビコン -->
-  <link rel="icon" href="./assets/img/favicon.ico" />
+    <!-- ファビコン -->
+    <link rel="icon" href="./assets/img/favicon.ico" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
-    rel="stylesheet"
-  />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Ravek | Webサービス</title>
+    <title>Ravek | Webサービス</title>
 
-  <!-- Style Sheet -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-<body>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header id="header" class="l-header"></header>
 
-  <!-- ヘッダー -->
-  <header id="header" class="l-header">
-  </header>
+    <main>
+      <!-- MV -->
+      <section id="mv" class="p-mv l-section"></section>
 
-  <main>
+      <!-- What is Ravek? -->
+      <section id="about" class="p-about l-section"></section>
 
-    <!-- MV -->
-    <section id="mv" class="p-mv l-section">
-    </section>
+      <!-- Feature -->
+      <section id="feature" class="p-feature l-section"></section>
 
-    <!-- What is Ravek? -->
-    <section id="about" class="p-about l-section">
-    </section>
+      <!-- Results -->
+      <section id="results" class="p-results l-section"></section>
 
-    <!-- Feature -->
-    <section id="feature" class="p-feature l-section">
-    </section>
+      <!-- How to -->
+      <section id="howto" class="p-howto l-section"></section>
 
-    <!-- Results -->
-    <section id="results" class="p-results l-section">
-    </section>
+      <!-- Price -->
+      <section id="price" class="p-price l-section">
+        <div class="l-inner">
+          <hgroup class="c-section-title">
+            <p class="c-section-title__en">Price</p>
+            <h2 class="c-section-title__ja">料金プラン</h2>
+          </hgroup>
+          <div class="p-price__table-scroll">
+            <div class="p-price__table-wrapper">
+              <table class="p-price__table">
+                <thead>
+                  <tr class="p-price__head-row">
+                    <th class="p-price__th-empty" scope="col"></th>
+                    <th class="p-price__th" scope="col">
+                      <div class="p-price__plan-name">ライト</div>
+                      <div class="p-price__plan-price">
+                        <span class="p-price__plan-price-label">月額</span
+                        ><span class="p-price__plan-price-num">1,980</span
+                        ><span class="p-price__plan-price-unit">円</span>
+                      </div>
+                      <a href="#" class="c-button c-button--white"
+                        >無料で使ってみる</a
+                      >
+                    </th>
+                    <th class="p-price__th p-price__th--featured" scope="col">
+                      <div class="p-price__plan-name">ベーシック</div>
+                      <div class="p-price__plan-price">
+                        <span class="p-price__plan-price-label">月額</span
+                        ><span class="p-price__plan-price-num">2,980</span
+                        ><span class="p-price__plan-price-unit">円</span>
+                      </div>
+                      <a href="#" class="c-button">無料で使ってみる</a>
+                    </th>
+                    <th class="p-price__th" scope="col">
+                      <div class="p-price__plan-name">プレミアム</div>
+                      <div class="p-price__plan-price">
+                        <span class="p-price__plan-price-label">月額</span
+                        ><span class="p-price__plan-price-num">4,980</span
+                        ><span class="p-price__plan-price-unit">円</span>
+                      </div>
+                      <a href="#" class="c-button c-button--white"
+                        >無料で使ってみる</a
+                      >
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="p-price__body-row">
+                    <th class="p-price__feature-name" scope="row">
+                      プロジェクト数
+                    </th>
+                    <td class="p-price__td">5</td>
+                    <td class="p-price__td p-price__td--featured">15</td>
+                    <td class="p-price__td">15</td>
+                  </tr>
+                  <tr class="p-price__body-row">
+                    <th class="p-price__feature-name" scope="row">
+                      メンバー数
+                    </th>
+                    <td class="p-price__td">10</td>
+                    <td class="p-price__td p-price__td--featured">30</td>
+                    <td class="p-price__td">30</td>
+                  </tr>
+                  <tr class="p-price__body-row">
+                    <th class="p-price__feature-name" scope="row">
+                      ストレージ(容量)
+                    </th>
+                    <td class="p-price__td">25GB</td>
+                    <td class="p-price__td p-price__td--featured">50GB</td>
+                    <td class="p-price__td">100GB</td>
+                  </tr>
+                  <tr class="p-price__body-row">
+                    <th class="p-price__feature-name" scope="row">2段階認証</th>
+                    <td class="p-price__td"></td>
+                    <td class="p-price__td p-price__td--featured">○</td>
+                    <td class="p-price__td">○</td>
+                  </tr>
+                  <tr class="p-price__body-row">
+                    <th class="p-price__feature-name" scope="row">IP制限</th>
+                    <td class="p-price__td"></td>
+                    <td class="p-price__td p-price__td--featured"></td>
+                    <td class="p-price__td">○</td>
+                  </tr>
+                  <tr class="p-price__body-row">
+                    <th class="p-price__feature-name" scope="row">
+                      メールサポート
+                    </th>
+                    <td class="p-price__td">○</td>
+                    <td class="p-price__td p-price__td--featured">○</td>
+                    <td class="p-price__td">○</td>
+                  </tr>
+                  <tr class="p-price__body-row">
+                    <th class="p-price__feature-name" scope="row">
+                      チャットサポート
+                    </th>
+                    <td class="p-price__td">○</td>
+                    <td class="p-price__td p-price__td--featured">○</td>
+                    <td class="p-price__td">○</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr class="p-price__foot-row">
+                    <td class="p-price__td-empty"></td>
+                    <td class="p-price__td">
+                      <a href="#" class="c-button c-button--white"
+                        >無料で使ってみる</a
+                      >
+                    </td>
+                    <td class="p-price__td p-price__td--featured">
+                      <a href="#" class="c-button">無料で使ってみる</a>
+                    </td>
+                    <td class="p-price__td">
+                      <a href="#" class="c-button c-button--white"
+                        >無料で使ってみる</a
+                      >
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- How to -->
-    <section id="howto" class="p-howto l-section">
-    </section>
+      <!-- FAQ -->
+      <section id="faq" class="p-faq l-section"></section>
 
-    <!-- Price -->
-    <section id="price" class="p-price l-section">
-    </section>
+      <!-- CTA -->
+      <div class="p-cta"></div>
+    </main>
 
-    <!-- FAQ -->
-    <section id="faq" class="p-faq l-section">
-    </section>
+    <!-- フッター -->
+    <footer id="footer" class="l-footer"></footer>
 
-    <!-- CTA -->
-    <div class="p-cta">
-    </div>
-
-  </main>
-
-  <!-- フッター -->
-  <footer id="footer" class="l-footer">
-  </footer>
-
-  <!-- JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
-  <script src="./assets/js/main.js" defer></script>
-</body>
+    <!-- JavaScript -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      defer
+    ></script>
+    <script src="./assets/js/main.js" defer></script>
+  </body>
 </html>
