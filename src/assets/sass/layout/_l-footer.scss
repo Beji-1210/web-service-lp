@@ -14,7 +14,7 @@
     gap: 32px;
     padding-inline: 20px;
   
-    @include global.mq(md) {
+    @include global.mq(lg) {
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
