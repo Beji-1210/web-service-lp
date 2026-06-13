@@ -17,7 +17,7 @@ const path = require("path");
 // Sass コンパイル
 function compileSass() {
   return gulp
-    .src(["./src/assets/sass/**/*.scss", "!./src/assets/sass/**/_*.scss"])
+    .src(["./assets/sass/**/*.scss", "!./assets/sass/**/_*.scss"])
     .pipe(
       sass().on("error", function (err) {
         console.error("Sass コンパイルエラー:", err.message);
@@ -26,47 +26,47 @@ function compileSass() {
     )
     .pipe(postcss([autoprefixer(), cssSorter()]))
     .pipe(mmq())
-    .pipe(gulp.dest("./public/assets/css"))
+    .pipe(gulp.dest("./assets/css"))
     .pipe(cleanCss())
     .pipe(rename({ suffix: ".min" }))
-    .pipe(gulp.dest("./public/assets/css"));
+    .pipe(gulp.dest("./assets/css"));
 }
 
 // JavaScript 結合・圧縮
 function minJs() {
   return gulp
-    .src("./src/assets/js/*.js")
+    .src("./assets/js/*.js")
     .pipe(concat("main.js"))
-    .pipe(gulp.dest("./public/assets/js"))
+    .pipe(gulp.dest("./assets/js"))
     .pipe(terser())
     .pipe(rename({ suffix: ".min" }))
-    .pipe(gulp.dest("./public/assets/js"));
+    .pipe(gulp.dest("./assets/js"));
 }
 
 // 画像コピー
 function copyImage() {
   return gulp
-    .src("./src/assets/img/**/*", { buffer: false })
-    .pipe(gulp.dest("./public/assets/img/"));
+    .src("./assets/img/**/*", { buffer: false })
+    .pipe(gulp.dest("./assets/img/"));
 }
 
 // WebP 変換
 function convertWebp() {
   return gulp
-    .src("./src/assets/img/**/*.{jpg,jpeg,png}")
+    .src("./assets/img/**/*.{jpg,jpeg,png}")
     .pipe(webp())
-    .pipe(gulp.dest("./public/assets/img/"));
+    .pipe(gulp.dest("./assets/img/"));
 }
 
 // HTML 整形・コピー
 function formatHtml() {
   return gulp
-    .src("./src/**/*.html")
+    .src(["./*.html"])
     .pipe(htmlBeautify({ indent_size: 2, indent_with_tabs: true }))
-    .pipe(gulp.dest("./public"));
+    .pipe(gulp.dest("./"));
 }
 
-// ファイル削除（対応ファイルを public から削除）
+// ファイル削除（対応ファイルを削除）
 function deleteCorrespondingFile(filePath, srcBase, destBase) {
   const relativePath = path.relative(srcBase, filePath);
   const destPath = path.join(destBase, relativePath);
@@ -84,45 +84,45 @@ function browserReload(done) {
 
 // ローカルサーバー起動
 function browserInit(done) {
-  browserSync.init({ server: { baseDir: "./public/" } });
+  browserSync.init({ server: { baseDir: "./" } });
   done();
 }
 
 // ファイル監視
 function watch() {
   const sassWatcher = gulp.watch(
-    "./src/assets/sass/**/*.scss",
+    "./assets/sass/**/*.scss",
     gulp.series(compileSass, browserReload)
   );
   sassWatcher.on("unlink", (filePath) => {
-    deleteCorrespondingFile(filePath, "src/assets/sass", "public/assets/css");
+    deleteCorrespondingFile(filePath, "assets/sass", "assets/css");
   });
 
   const jsWatcher = gulp.watch(
-    "./src/assets/js/**/*.js",
+    "./assets/js/**/*.js",
     gulp.series(minJs, browserReload)
   );
   jsWatcher.on("unlink", gulp.series(minJs, browserReload));
 
   const imgWatcher = gulp.watch(
-    "./src/assets/img/**/*",
+    "./assets/img/**/*",
     gulp.series(copyImage, convertWebp, browserReload)
   );
   imgWatcher.on("unlink", (filePath) => {
-    deleteCorrespondingFile(filePath, "src/assets/img", "public/assets/img");
-    const relativePath = path.relative("src/assets/img", filePath);
+    deleteCorrespondingFile(filePath, "assets/img", "assets/img");
+    const relativePath = path.relative("assets/img", filePath);
     const webpPath = path
-      .join("public/assets/img", relativePath)
+      .join("assets/img", relativePath)
       .replace(/\.(jpg|jpeg|png)$/i, ".webp");
     del([webpPath], { force: true });
   });
 
   const htmlWatcher = gulp.watch(
-    "./src/**/*.html",
+    "./*.html",
     gulp.series(formatHtml, browserReload)
   );
   htmlWatcher.on("unlink", (filePath) => {
-    deleteCorrespondingFile(filePath, "src", "public");
+    deleteCorrespondingFile(filePath, ".", ".");
   });
 }
 

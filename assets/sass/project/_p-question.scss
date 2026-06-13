@@ -61,10 +61,10 @@
   padding-left: 47px;
 
   @include global.mq(md) {
-    padding-left: 55px;
     line-height: 1;
     font-size: 18px;
     padding: 22px 24px;
+    padding-left: 55px;
     border-radius: 10px;
   }
 
