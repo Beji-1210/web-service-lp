@@ -1,0 +1,36 @@
+name: Build CSS
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "assets/sass/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Compile Sass
+        run: yarn gulp compileSass
+
+      - name: Commit compiled CSS
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/css/
+          git diff --cached --quiet || git commit -m "ci: Sass をコンパイル [skip ci]"
+          git push
