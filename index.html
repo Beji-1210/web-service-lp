@@ -1,630 +1,471 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <meta name="description" content="" />
 
-    <!-- OGP -->
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="noindex" />
+	<meta name="description" content="" />
 
-    <!-- ファビコン -->
-    <link rel="icon" href="./assets/img/favicon.ico" />
+	<!-- OGP -->
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:site_name" content="" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+	<!-- ファビコン -->
+	<link rel="icon" href="./assets/img/favicon.ico" />
 
-    <title>Ravek | Webサービス</title>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
 
-    <!-- Style Sheet -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <!-- ヘッダー -->
-    <header id="header" class="l-header p-header">
-      <div class="l-header__inner">
-        <a href="#" class="p-header__logo"
-          ><img
-            src="./assets/img/header-logo.svg"
-            alt="Ravek"
-            decoding="async"
-            width="69"
-            height="19"
-        /></a>
-        <nav class="p-header__nav">
-          <ul class="p-header__list">
-            <li><a href="#feature">特長</a></li>
-            <li><a href="#users">導入実績</a></li>
-            <li><a href="#flow">導入までの流れ</a></li>
-            <li><a href="#price">料金プラン</a></li>
-            <li><a href="#question">よくある質問</a></li>
-          </ul>
-          <a href="contact" class="p-header__button c-button">無料で使ってみる</a>
-        </nav>
-      </div>
-    </header>
+	<title>Ravek | Webサービス</title>
 
-    <button class="p-drawer__icon">
-      <span class="p-drawer__icon--menu">MENU</span>
-      <div class="p-drawer__icon--bar"></div>
-      <div class="p-drawer__icon--bar"></div>
-      <div class="p-drawer__icon--bar"></div>
-    </button>
+	<!-- Style Sheet -->
+	<link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-    <div class="p-drawer">
-      <div class="p-drawer__body">
-        <ul class="p-drawer__list">
-          <li>
-            <a href="#feature"><span>特長</span></a>
-          </li>
-          <li>
-            <a href="#users"><span>導入実績</span></a>
-          </li>
-          <li>
-            <a href="#flow"><span>導入までの流れ</span></a>
-          </li>
-          <li>
-            <a href="#price"><span>料金プラン</span></a>
-          </li>
-          <li>
-            <a href="#question"><span>よくある質問</span></a>
-          </li>
-        </ul>
-        <div class="p-drawer__button-wrap">
-          <a href="#" class="c-button p-drawer__button">無料でRavekを使ってみる</a>
-          <a href="#" class="c-button c-button--white p-drawer__button--white"
-            >資料をダウンロードする</a
-          >
-        </div>
-      </div>
-    </div>
+<body>
+	<!-- ヘッダー -->
+	<header id="header" class="l-header p-header">
+		<div class="l-header__inner">
+			<a href="#" class="p-header__logo"><img src="./assets/img/header-logo.svg" alt="Ravek" decoding="async" width="69" height="19" /></a>
+			<nav class="p-header__nav">
+				<ul class="p-header__list">
+					<li><a href="#feature">特長</a></li>
+					<li><a href="#users">導入実績</a></li>
+					<li><a href="#flow">導入までの流れ</a></li>
+					<li><a href="#price">料金プラン</a></li>
+					<li><a href="#question">よくある質問</a></li>
+				</ul>
+				<a href="contact" class="p-header__button c-button">無料で使ってみる</a>
+			</nav>
+		</div>
+	</header>
 
-    <main>
-      <!-- MV -->
-      <section id="mv" class="p-mv">
-        <div class="p-mv__inner">
-          <h1 class="p-mv__title">タスク管理は<br />時間をかけず、高速に。</h1>
-          <p class="p-mv__text">
-            Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を<br />簡単かつ高速にし、生産性を向上させるツールです。
-          </p>
-          <div class="p-mv__image">
-            <img
-              src="./assets/img/mv-image.png"
-              alt=""
-              width="1030"
-              height="1030"
-              decoding="async"
-            />
-          </div>
-          <div class="p-mv__button-wrap">
-            <a href="#contact" class="c-button p-mv__button">まずは無料で使ってみる</a>
-            <a href="#" class="c-button c-button--white p-mv__button p-mv__button--white"
-              >資料をダウンロードする</a
-            >
-          </div>
-        </div>
-      </section>
+	<button class="p-drawer__icon">
+		<span class="p-drawer__icon--menu">MENU</span>
+		<div class="p-drawer__icon--bar"></div>
+		<div class="p-drawer__icon--bar"></div>
+		<div class="p-drawer__icon--bar"></div>
+	</button>
 
-      <!-- What is Ravek? -->
-      <section id="about" class="p-about l-section">
-        <div class="l-inner">
-          <hgroup class="c-section-title p-about__section-title">
-            <p class="c-section-title__en">What is Ravek?</p>
-            <h2 class="c-section-title__ja">タスク管理の時間を<br />削減するツール</h2>
-          </hgroup>
-          <p class="p-about__text">
-            Ravek（レイベック）は、<br class="p-about__text--br-hidden" /><strong
-              >複数人が関わるプロジェクトでのタスク管理を簡単かつ高速にするツール</strong
-            >です。
-          </p>
-          <p class="p-about__text">
-            タスクの登録や進捗管理の手間を減らし、わかりやすく見える化することで<br />タスク管理にかかる時間を極限まで減らし、本質的な業務に時間を使いましょう。
-          </p>
-          <a href="contact" class="c-button p-about__button">無料でRavekを使ってみる</a>
-        </div>
-      </section>
+	<div class="p-drawer">
+		<div class="p-drawer__body">
+			<ul class="p-drawer__list">
+				<li>
+					<a href="#feature"><span>特長</span></a>
+				</li>
+				<li>
+					<a href="#users"><span>導入実績</span></a>
+				</li>
+				<li>
+					<a href="#flow"><span>導入までの流れ</span></a>
+				</li>
+				<li>
+					<a href="#price"><span>料金プラン</span></a>
+				</li>
+				<li>
+					<a href="#question"><span>よくある質問</span></a>
+				</li>
+			</ul>
+			<div class="p-drawer__button-wrap">
+				<a href="#" class="c-button p-drawer__button">無料でRavekを使ってみる</a>
+				<a href="#" class="c-button c-button--white p-drawer__button--white">資料をダウンロードする</a>
+			</div>
+		</div>
+	</div>
 
-      <!-- Feature -->
-      <section id="feature" class="p-feature l-section">
-        <div class="p-feature__inner l-inner">
-          <hgroup class="c-section-title">
-            <p class="c-section-title__en">Feature</p>
-            <h2 class="c-section-title__ja">
-              Ravekの<span class="p-feature__title-num">3</span>つの特長
-            </h2>
-          </hgroup>
-          <ol class="p-feature__list">
-            <li class="p-feature__item">
-              <div class="p-feature__img">
-                <img
-                  src="./assets/img/feature-image1.webp"
-                  alt="ダッシュボードの画面イメージ"
-                  width="520"
-                  height="520"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="p-feature__card">
-                <p class="p-feature__number">01</p>
-                <div class="p-feature__content">
-                  <h3 class="p-feature__heading">
-                    タスクの種類・進捗を<br />ダッシュボードで確認可能
-                  </h3>
-                  <p class="p-feature__text">
-                    Ravekはメンバーが入力したタスクを整理し、ダッシュボードにガントチャートとして表示。ダッシュボードを確認するだけで、誰のどのタスクがどの程度進んでいるのかを一目で把握できます。
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="p-feature__item">
-              <div class="p-feature__img">
-                <img
-                  src="./assets/img/feature-image2.webp"
-                  alt="シンプルな入力操作のイメージ"
-                  width="520"
-                  height="520"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="p-feature__card">
-                <p class="p-feature__number">02</p>
-                <div class="p-feature__content">
-                  <h3 class="p-feature__heading">
-                    タスクの入力がシンプルかつ簡単。<br />入力の手間が最小限に
-                  </h3>
-                  <p class="p-feature__text">
-                    タスク管理ツールで面倒になりがちなタスクの入力作業。<br
-                      class="u-hidden-sp"
-                    />RavekはPC・スマートフォンのどちらでもシンプルかつ簡単に入力でき、手間が最小限に抑えられます。本質的な業務に時間を割きましょう。
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="p-feature__item">
-              <div class="p-feature__img">
-                <img
-                  src="./assets/img/feature-image3.webp"
-                  alt="Slack連携のイメージ"
-                  width="520"
-                  height="520"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="p-feature__card">
-                <p class="p-feature__number">03</p>
-                <div class="p-feature__content">
-                  <h3 class="p-feature__heading">
-                    SlackとのAPI連携<br />ツール切り替えの手間を削減
-                  </h3>
-                  <p class="p-feature__text">
-                    RavekはSlackと連携することで、Slack上でRavekをタスクを追加したり、確認したりできます。都度の切り替えの手間がなくなり、シームレスに扱えるのが特長です。Slackを導入しているなら違和感なく使用できます。
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
+	<main>
+		<!-- MV -->
+		<section id="mv" class="p-mv">
+			<div class="p-mv__inner">
+				<h1 class="p-mv__title">タスク管理は<br />時間をかけず、高速に。</h1>
+				<p class="p-mv__text">
+					Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を<br />簡単かつ高速にし、生産性を向上させるツールです。
+				</p>
+				<div class="p-mv__image">
+					<img src="./assets/img/mv-image.png" alt="" width="1030" height="1030" decoding="async" />
+				</div>
+				<div class="p-mv__button-wrap">
+					<a href="#contact" class="c-button p-mv__button">まずは無料で使ってみる</a>
+					<a href="#" class="c-button c-button--white p-mv__button p-mv__button--white">資料をダウンロードする</a>
+				</div>
+			</div>
+		</section>
 
-      <!-- CTA -->
-      <div class="p-cta">
-        <div class="l-inner">
-          <p class="p-cta__text">
-            14日間の無料トライアル可能。<br />Ravekで快適なタスク管理を体験しよう
-          </p>
-          <a class="p-cta__button c-button" href="#">無料でRavekを使ってみる</a>
-        </div>
-      </div>
+		<!-- What is Ravek? -->
+		<section id="about" class="p-about l-section">
+			<div class="l-inner">
+				<hgroup class="c-section-title p-about__section-title">
+					<p class="c-section-title__en">What is Ravek?</p>
+					<h2 class="c-section-title__ja">タスク管理の時間を<br />削減するツール</h2>
+				</hgroup>
+				<p class="p-about__text">
+					Ravek（レイベック）は、<br class="p-about__text--br-hidden" /><strong>複数人が関わるプロジェクトでのタスク管理を簡単かつ高速にするツール</strong>です。
+				</p>
+				<p class="p-about__text">
+					タスクの登録や進捗管理の手間を減らし、わかりやすく見える化することで<br />タスク管理にかかる時間を極限まで減らし、本質的な業務に時間を使いましょう。
+				</p>
+				<a href="contact" class="c-button p-about__button">無料でRavekを使ってみる</a>
+			</div>
+		</section>
 
-      <!-- Results -->
-      <section id="users" class="p-users l-section">
-        <div class="l-inner">
-          <hgroup class="c-section-title">
-            <p class="c-section-title__en">Users</p>
-            <h2 class="c-section-title__ja">導入実績</h2>
-          </hgroup>
-          <ul class="p-users__list">
-            <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
-            </li>
-            <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
-            </li>
-            <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
-            </li>
-            <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
-            </li>
-            <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
-            </li>
-            <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
-            </li>
-            <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
-            </li>
-            <li class="p-users__item">
-              <img
-                src="./assets/img/users_icon.webp"
-                alt="Icedog Works"
-                width="213"
-                height="169"
-                loading="lazy"
-                decoding="async"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
+		<!-- Feature -->
+		<section id="feature" class="p-feature l-section">
+			<div class="p-feature__inner l-inner">
+				<hgroup class="c-section-title">
+					<p class="c-section-title__en">Feature</p>
+					<h2 class="c-section-title__ja">
+						Ravekの<span class="p-feature__title-num">3</span>つの特長
+					</h2>
+				</hgroup>
+				<ol class="p-feature__list">
+					<li class="p-feature__item">
+						<div class="p-feature__img">
+							<img src="./assets/img/feature-image1.webp" alt="ダッシュボードの画面イメージ" width="520" height="520" loading="lazy" decoding="async" />
+						</div>
+						<div class="p-feature__card">
+							<p class="p-feature__number">01</p>
+							<div class="p-feature__content">
+								<h3 class="p-feature__heading">
+									タスクの種類・進捗を<br />ダッシュボードで確認可能
+								</h3>
+								<p class="p-feature__text">
+									Ravekはメンバーが入力したタスクを整理し、ダッシュボードにガントチャートとして表示。ダッシュボードを確認するだけで、誰のどのタスクがどの程度進んでいるのかを一目で把握できます。
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="p-feature__item">
+						<div class="p-feature__img">
+							<img src="./assets/img/feature-image2.webp" alt="シンプルな入力操作のイメージ" width="520" height="520" loading="lazy" decoding="async" />
+						</div>
+						<div class="p-feature__card">
+							<p class="p-feature__number">02</p>
+							<div class="p-feature__content">
+								<h3 class="p-feature__heading">
+									タスクの入力がシンプルかつ簡単。<br />入力の手間が最小限に
+								</h3>
+								<p class="p-feature__text">
+									タスク管理ツールで面倒になりがちなタスクの入力作業。<br class="u-hidden-sp" />RavekはPC・スマートフォンのどちらでもシンプルかつ簡単に入力でき、手間が最小限に抑えられます。本質的な業務に時間を割きましょう。
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="p-feature__item">
+						<div class="p-feature__img">
+							<img src="./assets/img/feature-image3.webp" alt="Slack連携のイメージ" width="520" height="520" loading="lazy" decoding="async" />
+						</div>
+						<div class="p-feature__card">
+							<p class="p-feature__number">03</p>
+							<div class="p-feature__content">
+								<h3 class="p-feature__heading">
+									SlackとのAPI連携<br />ツール切り替えの手間を削減
+								</h3>
+								<p class="p-feature__text">
+									RavekはSlackと連携することで、Slack上でRavekをタスクを追加したり、確認したりできます。都度の切り替えの手間がなくなり、シームレスに扱えるのが特長です。Slackを導入しているなら違和感なく使用できます。
+								</p>
+							</div>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</section>
 
-      <!-- Flow -->
-      <section id="flow" class="p-flow l-section">
-        <div class="l-inner">
-          <hgroup class="c-section-title">
-            <p class="c-section-title__en">Flow</p>
-            <h2 class="c-section-title__ja">導入までの流れ</h2>
-          </hgroup>
-          <ol class="p-flow__list">
-            <li class="p-flow__item">
-              <p class="p-flow__number">01</p>
-              <div class="p-flow__img">
-                <img
-                  src="./assets/img/flow-image1.webp"
-                  alt="無料トライアルを開始"
-                  width="199"
-                  height="148"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <h3 class="p-flow__heading">無料トライアルを開始</h3>
-              <p class="p-flow__text">
-                まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。
-              </p>
-            </li>
-            <li class="p-flow__arrow" aria-hidden="true"></li>
-            <li class="p-flow__item">
-              <p class="p-flow__number">02</p>
-              <div class="p-flow__img">
-                <img
-                  src="./assets/img/flow-image2.webp"
-                  alt="本格導入をサポート"
-                  width="199"
-                  height="148"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <h3 class="p-flow__heading">本格導入をサポート</h3>
-              <p class="p-flow__text">
-                Ravekを気に入っていただけましたら、適したプランで導入ください。導入にお困りの際は、メール、またはチャットにてサポートいたします。
-              </p>
-            </li>
-            <li class="p-flow__arrow" aria-hidden="true"></li>
-            <li class="p-flow__item">
-              <p class="p-flow__number">03</p>
-              <div class="p-flow__img">
-                <img
-                  src="./assets/img/flow-image3.webp"
-                  alt="全プロジェクトへ展開"
-                  width="192"
-                  height="143"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <h3 class="p-flow__heading">全プロジェクトへ展開</h3>
-              <p class="p-flow__text">
-                Ravekは段階的な導入がおすすめです。主要プロジェクトでの運用に慣れたら、全プロジェクトへ展開を行いましょう。
-              </p>
-            </li>
-          </ol>
-        </div>
-      </section>
+		<!-- CTA -->
+		<div class="p-cta">
+			<div class="l-inner">
+				<p class="p-cta__text">
+					14日間の無料トライアル可能。<br />Ravekで快適なタスク管理を体験しよう
+				</p>
+				<a class="p-cta__button c-button" href="#">無料でRavekを使ってみる</a>
+			</div>
+		</div>
 
-      <!-- CTA -->
-      <div class="p-cta">
-        <div class="l-inner">
-          <p class="p-cta__text">
-            14日間の無料トライアル可能。<br />Ravekで快適なタスク管理を体験しよう
-          </p>
-          <a class="p-cta__button c-button" href="#">無料でRavekを使ってみる</a>
-        </div>
-      </div>
+		<!-- Results -->
+		<section id="users" class="p-users l-section">
+			<div class="l-inner">
+				<hgroup class="c-section-title">
+					<p class="c-section-title__en">Users</p>
+					<h2 class="c-section-title__ja">導入実績</h2>
+				</hgroup>
+				<ul class="p-users__list">
+					<li class="p-users__item">
+						<img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+					</li>
+					<li class="p-users__item">
+						<img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+					</li>
+					<li class="p-users__item">
+						<img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+					</li>
+					<li class="p-users__item">
+						<img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+					</li>
+					<li class="p-users__item">
+						<img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+					</li>
+					<li class="p-users__item">
+						<img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+					</li>
+					<li class="p-users__item">
+						<img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+					</li>
+					<li class="p-users__item">
+						<img src="./assets/img/users_icon.webp" alt="Icedog Works" width="213" height="169" loading="lazy" decoding="async" />
+					</li>
+				</ul>
+			</div>
+		</section>
 
-      <!-- Price -->
-      <section id="price" class="p-price l-section">
-        <div class="l-inner">
-          <hgroup class="c-section-title">
-            <p class="c-section-title__en">Price</p>
-            <h2 class="c-section-title__ja">料金プラン</h2>
-          </hgroup>
-          <div class="p-price__table-scroll">
-            <div class="p-price__table-wrapper">
-              <table class="p-price__table">
-                <thead>
-                  <tr class="p-price__head-row">
-                    <th class="p-price__th-empty" scope="col"></th>
-                    <th class="p-price__th" scope="col">
-                      <div class="p-price__plan-name">ライト</div>
-                      <div class="p-price__plan-price">
-                        <span class="p-price__plan-price-label">月額</span
-                        ><span class="p-price__plan-price-num">1,980</span
-                        ><span class="p-price__plan-price-unit">円</span>
-                      </div>
-                      <a href="#" class="c-button c-button--white">無料で使ってみる</a>
-                    </th>
-                    <th class="p-price__th p-price__th--featured" scope="col">
-                      <div class="p-price__plan-name">ベーシック</div>
-                      <div class="p-price__plan-price">
-                        <span class="p-price__plan-price-label">月額</span
-                        ><span class="p-price__plan-price-num">2,980</span
-                        ><span class="p-price__plan-price-unit">円</span>
-                      </div>
-                      <a href="#" class="c-button">無料で使ってみる</a>
-                    </th>
-                    <th class="p-price__th" scope="col">
-                      <div class="p-price__plan-name">プレミアム</div>
-                      <div class="p-price__plan-price">
-                        <span class="p-price__plan-price-label">月額</span
-                        ><span class="p-price__plan-price-num">4,980</span
-                        ><span class="p-price__plan-price-unit">円</span>
-                      </div>
-                      <a href="#" class="c-button c-button--white">無料で使ってみる</a>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="p-price__body-row">
-                    <th class="p-price__feature-name" scope="row">プロジェクト数</th>
-                    <td class="p-price__td">5</td>
-                    <td class="p-price__td p-price__td--featured">15</td>
-                    <td class="p-price__td">15</td>
-                  </tr>
-                  <tr class="p-price__body-row">
-                    <th class="p-price__feature-name" scope="row">メンバー数</th>
-                    <td class="p-price__td">10</td>
-                    <td class="p-price__td p-price__td--featured">30</td>
-                    <td class="p-price__td">30</td>
-                  </tr>
-                  <tr class="p-price__body-row">
-                    <th class="p-price__feature-name" scope="row">ストレージ(容量)</th>
-                    <td class="p-price__td">25GB</td>
-                    <td class="p-price__td p-price__td--featured">50GB</td>
-                    <td class="p-price__td">100GB</td>
-                  </tr>
-                  <tr class="p-price__body-row">
-                    <th class="p-price__feature-name" scope="row">2段階認証</th>
-                    <td class="p-price__td"></td>
-                    <td class="p-price__td p-price__td--featured">○</td>
-                    <td class="p-price__td">○</td>
-                  </tr>
-                  <tr class="p-price__body-row">
-                    <th class="p-price__feature-name" scope="row">IP制限</th>
-                    <td class="p-price__td"></td>
-                    <td class="p-price__td p-price__td--featured"></td>
-                    <td class="p-price__td">○</td>
-                  </tr>
-                  <tr class="p-price__body-row">
-                    <th class="p-price__feature-name" scope="row">メールサポート</th>
-                    <td class="p-price__td">○</td>
-                    <td class="p-price__td p-price__td--featured">○</td>
-                    <td class="p-price__td">○</td>
-                  </tr>
-                  <tr class="p-price__body-row">
-                    <th class="p-price__feature-name" scope="row">チャットサポート</th>
-                    <td class="p-price__td">○</td>
-                    <td class="p-price__td p-price__td--featured">○</td>
-                    <td class="p-price__td">○</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr class="p-price__foot-row">
-                    <td class="p-price__td-empty"></td>
-                    <td class="p-price__td">
-                      <a href="#" class="c-button c-button--white">無料で使ってみる</a>
-                    </td>
-                    <td class="p-price__td p-price__td--featured">
-                      <a href="#" class="c-button">無料で使ってみる</a>
-                    </td>
-                    <td class="p-price__td">
-                      <a href="#" class="c-button c-button--white">無料で使ってみる</a>
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
+		<!-- Flow -->
+		<section id="flow" class="p-flow l-section">
+			<div class="l-inner">
+				<hgroup class="c-section-title">
+					<p class="c-section-title__en">Flow</p>
+					<h2 class="c-section-title__ja">導入までの流れ</h2>
+				</hgroup>
+				<ol class="p-flow__list">
+					<li class="p-flow__item">
+						<p class="p-flow__number">01</p>
+						<div class="p-flow__img">
+							<img src="./assets/img/flow-image1.webp" alt="無料トライアルを開始" width="199" height="148" loading="lazy" decoding="async" />
+						</div>
+						<h3 class="p-flow__heading">無料トライアルを開始</h3>
+						<p class="p-flow__text">
+							まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。
+						</p>
+					</li>
+					<li class="p-flow__arrow" aria-hidden="true"></li>
+					<li class="p-flow__item">
+						<p class="p-flow__number">02</p>
+						<div class="p-flow__img">
+							<img src="./assets/img/flow-image2.webp" alt="本格導入をサポート" width="199" height="148" loading="lazy" decoding="async" />
+						</div>
+						<h3 class="p-flow__heading">本格導入をサポート</h3>
+						<p class="p-flow__text">
+							Ravekを気に入っていただけましたら、適したプランで導入ください。導入にお困りの際は、メール、またはチャットにてサポートいたします。
+						</p>
+					</li>
+					<li class="p-flow__arrow" aria-hidden="true"></li>
+					<li class="p-flow__item">
+						<p class="p-flow__number">03</p>
+						<div class="p-flow__img">
+							<img src="./assets/img/flow-image3.webp" alt="全プロジェクトへ展開" width="192" height="143" loading="lazy" decoding="async" />
+						</div>
+						<h3 class="p-flow__heading">全プロジェクトへ展開</h3>
+						<p class="p-flow__text">
+							Ravekは段階的な導入がおすすめです。主要プロジェクトでの運用に慣れたら、全プロジェクトへ展開を行いましょう。
+						</p>
+					</li>
+				</ol>
+			</div>
+		</section>
 
-      <!-- question -->
-      <section id="question" class="p-question l-section">
-        <div class="l-inner">
-          <hgroup class="c-section-title">
-            <p class="c-section-title__en">Question</p>
-            <h2 class="c-section-title__ja">よくある質問</h2>
-          </hgroup>
-          <dl class="p-question__list">
-            <div class="p-question__item">
-              <dt class="p-question__q">Ravekはユーザー1人あたりの課金制なのですか？</dt>
-              <dd class="p-question__a">
-                いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br />もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
-              </dd>
-            </div>
-            <div class="p-question__item">
-              <dt class="p-question__q">Ravekはユーザー1人あたりの課金制なのですか？</dt>
-              <dd class="p-question__a">
-                いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br />もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
-              </dd>
-            </div>
-            <div class="p-question__item">
-              <dt class="p-question__q">Ravekはユーザー1人あたりの課金制なのですか？</dt>
-              <dd class="p-question__a">
-                いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br />もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
-              </dd>
-            </div>
-            <div class="p-question__item">
-              <dt class="p-question__q">Ravekはユーザー1人あたりの課金制なのですか？</dt>
-              <dd class="p-question__a">
-                いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br />もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
-              </dd>
-            </div>
-          </dl>
-        </div>
-      </section>
+		<!-- CTA -->
+		<div class="p-cta">
+			<div class="l-inner">
+				<p class="p-cta__text">
+					14日間の無料トライアル可能。<br />Ravekで快適なタスク管理を体験しよう
+				</p>
+				<a class="p-cta__button c-button" href="#">無料でRavekを使ってみる</a>
+			</div>
+		</div>
 
-      <!-- CTA -->
-      <div class="p-cta">
-        <div class="l-inner">
-          <p class="p-cta__text">
-            14日間の無料トライアル可能。<br />Ravekで快適なタスク管理を体験しよう
-          </p>
-          <a class="p-cta__button c-button" href="#">無料でRavekを使ってみる</a>
-        </div>
-      </div>
-    </main>
+		<!-- Price -->
+		<section id="price" class="p-price l-section">
+			<div class="l-inner">
+				<hgroup class="c-section-title">
+					<p class="c-section-title__en">Price</p>
+					<h2 class="c-section-title__ja">料金プラン</h2>
+				</hgroup>
+				<div class="p-price__table-scroll">
+					<div class="p-price__table-wrapper">
+						<table class="p-price__table">
+							<thead>
+								<tr class="p-price__head-row">
+									<th class="p-price__th-empty" scope="col"></th>
+									<th class="p-price__th" scope="col">
+										<div class="p-price__plan-name">ライト</div>
+										<div class="p-price__plan-price">
+											<span class="p-price__plan-price-label">月額</span><span class="p-price__plan-price-num">1,980</span><span class="p-price__plan-price-unit">円</span>
+										</div>
+										<a href="#" class="c-button c-button--white">無料で使ってみる</a>
+									</th>
+									<th class="p-price__th p-price__th--featured" scope="col">
+										<div class="p-price__plan-name">ベーシック</div>
+										<div class="p-price__plan-price">
+											<span class="p-price__plan-price-label">月額</span><span class="p-price__plan-price-num">2,980</span><span class="p-price__plan-price-unit">円</span>
+										</div>
+										<a href="#" class="c-button">無料で使ってみる</a>
+									</th>
+									<th class="p-price__th" scope="col">
+										<div class="p-price__plan-name">プレミアム</div>
+										<div class="p-price__plan-price">
+											<span class="p-price__plan-price-label">月額</span><span class="p-price__plan-price-num">4,980</span><span class="p-price__plan-price-unit">円</span>
+										</div>
+										<a href="#" class="c-button c-button--white">無料で使ってみる</a>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="p-price__body-row">
+									<th class="p-price__feature-name" scope="row">プロジェクト数</th>
+									<td class="p-price__td">5</td>
+									<td class="p-price__td p-price__td--featured">15</td>
+									<td class="p-price__td">15</td>
+								</tr>
+								<tr class="p-price__body-row">
+									<th class="p-price__feature-name" scope="row">メンバー数</th>
+									<td class="p-price__td">10</td>
+									<td class="p-price__td p-price__td--featured">30</td>
+									<td class="p-price__td">30</td>
+								</tr>
+								<tr class="p-price__body-row">
+									<th class="p-price__feature-name" scope="row">ストレージ(容量)</th>
+									<td class="p-price__td">25GB</td>
+									<td class="p-price__td p-price__td--featured">50GB</td>
+									<td class="p-price__td">100GB</td>
+								</tr>
+								<tr class="p-price__body-row">
+									<th class="p-price__feature-name" scope="row">2段階認証</th>
+									<td class="p-price__td"></td>
+									<td class="p-price__td p-price__td--featured">○</td>
+									<td class="p-price__td">○</td>
+								</tr>
+								<tr class="p-price__body-row">
+									<th class="p-price__feature-name" scope="row">IP制限</th>
+									<td class="p-price__td"></td>
+									<td class="p-price__td p-price__td--featured"></td>
+									<td class="p-price__td">○</td>
+								</tr>
+								<tr class="p-price__body-row">
+									<th class="p-price__feature-name" scope="row">メールサポート</th>
+									<td class="p-price__td">○</td>
+									<td class="p-price__td p-price__td--featured">○</td>
+									<td class="p-price__td">○</td>
+								</tr>
+								<tr class="p-price__body-row">
+									<th class="p-price__feature-name" scope="row">チャットサポート</th>
+									<td class="p-price__td">○</td>
+									<td class="p-price__td p-price__td--featured">○</td>
+									<td class="p-price__td">○</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr class="p-price__foot-row">
+									<td class="p-price__td-empty"></td>
+									<td class="p-price__td">
+										<a href="#" class="c-button c-button--white">無料で使ってみる</a>
+									</td>
+									<td class="p-price__td p-price__td--featured">
+										<a href="#" class="c-button">無料で使ってみる</a>
+									</td>
+									<td class="p-price__td">
+										<a href="#" class="c-button c-button--white">無料で使ってみる</a>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
 
-          <!-- CTA -->
-          <div class="p-cta">
-            <div class="l-inner">
-              <p class="p-cta__text">
-                14日間の無料トライアル可能。<br />Ravekで快適なタスク管理を体験しよう
-              </p>
-              <a class="p-cta__button c-button" href="#">無料でRavekを使ってみる</a>
-            </div>
-          </div>
+		<!-- question -->
+		<section id="question" class="p-question l-section">
+			<div class="l-inner">
+				<hgroup class="c-section-title">
+					<p class="c-section-title__en">Question</p>
+					<h2 class="c-section-title__ja">よくある質問</h2>
+				</hgroup>
+				<dl class="p-question__list">
+					<div class="p-question__item">
+						<dt class="p-question__q">Ravekはユーザー1人あたりの課金制なのですか？</dt>
+						<dd class="p-question__a">
+							いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br />もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+						</dd>
+					</div>
+					<div class="p-question__item">
+						<dt class="p-question__q">Ravekはユーザー1人あたりの課金制なのですか？</dt>
+						<dd class="p-question__a">
+							いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br />もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+						</dd>
+					</div>
+					<div class="p-question__item">
+						<dt class="p-question__q">Ravekはユーザー1人あたりの課金制なのですか？</dt>
+						<dd class="p-question__a">
+							いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br />もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+						</dd>
+					</div>
+					<div class="p-question__item">
+						<dt class="p-question__q">Ravekはユーザー1人あたりの課金制なのですか？</dt>
+						<dd class="p-question__a">
+							いえ、Ravekは１アカウント開設いただくと、そのプランに応じたユーザー数の分だけ、使用できます。<br />もしプランのデフォルトユーザー数を超えて利用されたい場合は、お問い合わせください。
+						</dd>
+					</div>
+				</dl>
+			</div>
+		</section>
 
-    <!-- フッター -->
-    <footer id="footer" class="l-footer p-footer">
-      <div class="l-footer__inner">
-        <div class="p-footer__sns">
-          <p class="p-footer__sns-title">Share on SNS</p>
-          <ul class="p-footer__sns-icons">
-            <li>
-              <a href="https://x.com" target="_blank" rel="noopener noreferrer"
-                ><img
-                  src="./assets/img/footer-x.svg"
-                  alt="X"
-                  width="24"
-                  height="24"
-                  loading="lazy"
-                  decoding="async"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                ><img
-                  src="./assets/img/footer-instagram.svg"
-                  alt="Instagram"
-                  width="24"
-                  height="24"
-                  loading="lazy"
-                  decoding="async"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                ><img
-                  src="./assets/img/footer-facebook.svg"
-                  alt="Facebook"
-                  width="24"
-                  height="24"
-                  loading="lazy"
-                  decoding="async"
-              /></a>
-            </li>
-          </ul>
-        </div>
-        <div class="p-footer__main">
-          <p class="p-footer__logo">Ravek</p>
-          <nav class="p-footer__nav">
-            <ul class="p-footer__nav-list">
-              <li><a href="#" class="p-footer__nav-link">会社概要</a></li>
-              <li>
-                <a href="#" class="p-footer__nav-link">プライバシーポリシー</a>
-              </li>
-              <li><a href="#" class="p-footer__nav-link">利用規約</a></li>
-              <li>
-                <a href="#contact" class="p-footer__nav-link">お問い合わせ</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="p-footer__copy">
-            <small class="p-footer__copy-text">© Ravek Inc. 2021</small>
-            <small class="p-footer__copy-text">Illustration by FreepikStoryset</small>
-          </div>
-        </div>
-      </div>
-    </footer>
+		<!-- CTA -->
+		<div class="p-cta">
+			<div class="l-inner">
+				<p class="p-cta__text">
+					14日間の無料トライアル可能。<br />Ravekで快適なタスク管理を体験しよう
+				</p>
+				<a class="p-cta__button c-button" href="#">無料でRavekを使ってみる</a>
+			</div>
+		</div>
+	</main>
 
-    <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
-    <script src="./assets/js/main.js" defer></script>
-  </body>
+	<!-- フッター -->
+	<footer id="footer" class="l-footer p-footer">
+		<div class="l-footer__inner">
+			<div class="p-footer__sns">
+				<p class="p-footer__sns-title">Share on SNS</p>
+				<ul class="p-footer__sns-icons">
+					<li>
+						<a href="https://x.com" target="_blank" rel="noopener noreferrer"><img src="./assets/img/footer-x.svg" alt="X" width="24" height="24" loading="lazy" decoding="async" /></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="./assets/img/footer-instagram.svg" alt="Instagram" width="24" height="24" loading="lazy" decoding="async" /></a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="./assets/img/footer-facebook.svg" alt="Facebook" width="24" height="24" loading="lazy" decoding="async" /></a>
+					</li>
+				</ul>
+			</div>
+			<div class="p-footer__main">
+				<p class="p-footer__logo">Ravek</p>
+				<nav class="p-footer__nav">
+					<ul class="p-footer__nav-list">
+						<li><a href="#" class="p-footer__nav-link">会社概要</a></li>
+						<li>
+							<a href="#" class="p-footer__nav-link">プライバシーポリシー</a>
+						</li>
+						<li><a href="#" class="p-footer__nav-link">利用規約</a></li>
+						<li>
+							<a href="#contact" class="p-footer__nav-link">お問い合わせ</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="p-footer__copy">
+					<small class="p-footer__copy-text">© Ravek Inc. 2021</small>
+					<small class="p-footer__copy-text">Illustration by FreepikStoryset</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
+	<script src="./assets/js/main.js" defer></script>
+</body>
+
 </html>
